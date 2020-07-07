@@ -14,6 +14,7 @@ export interface Colors{
   primary: string,
   secundary: string,
   warning: string,
+  divider: string,
   text: string,
   title: string,
   background: string,
@@ -25,4 +26,5 @@ export interface Shapes{
 
 export interface Breakpoints{
   small: number,
+  medium: number,
 }

@@ -7,18 +7,20 @@ export default {
 
   colors: {
     primary: '#b2ebf2',
-    secundary: '#90caf9',
+    secundary: 'rgb(161, 161, 161)',
     warning: '',
-    text: '#6C6C80',
-    title: '#3f3d56',
-    background: '#F0F0F5',
+    text: '#a1a1a1',
+    title: '#ffffff',
+    divider: '#343434',
+    background: 'black',
   },
 
   shapes: {
-    borderRadius: (unit / 1.6),
+    borderRadius: unit,
   },
 
   breakpoints: {
     small: 576,
+    medium: 800,
   },
 };
