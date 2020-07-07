@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { Props } from '../../../styles/themes/types';
 
-export const Container = styled.div`
-  border: solid 2px ${(props: Props) => props.theme.colors.divider};
-  border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
-  height: 460px;
+export const ContainerMotion = styled(motion.div)`
+  padding: ${(props: Props) => props.theme.unit}px;
+  height: 320px;
+  overflow: hidden;
   
   flex: 0 0 40%;
   max-width: 40%;
@@ -13,6 +14,13 @@ export const Container = styled.div`
   &:nth-child(4n + 4) {
     flex: 0 0 60%;
     max-width: 60%;
+  }
+
+  img{
+    border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
 

@@ -20,7 +20,7 @@ export default {
   },
 
   breakpoints: {
-    small: 576,
-    medium: 800,
+    small: 680,
+    medium: 860,
   },
 };
