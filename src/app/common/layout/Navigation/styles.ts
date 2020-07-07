@@ -11,5 +11,28 @@ export const Container = styled.div`
 export const Content = styled.main`
   height: calc(100vh - 90px);
   overflow: auto;
-  padding: ${(props: Props) => props.theme.unit}px 0 ${(props: Props) => props.theme.unit}px
+  padding: ${(props: Props) => props.theme.unit}px 0 ${(props: Props) => props.theme.unit}px;
+
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  ::-webkit-scrollbar:vertical {
+      width: 12px;
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+      height: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background-color: ${(props: Props) => props.theme.colors.divider};
+      border-radius: ${(props: Props) => props.theme.unit}px;
+  }
+
+  ::-webkit-scrollbar-track {
+    margin-top: ${(props: Props) => props.theme.unit * 2}px;
+    margin-bottom: ${(props: Props) => props.theme.unit * 2}px
+    
+  }
 `;
