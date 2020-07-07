@@ -15,3 +15,16 @@ export const Text = styled.div`
   text-transform: uppercase;
   margin-bottom: ${(props: Props) => props.theme.unit / 4}px;
 `;
+
+export const Avatar = styled.div`
+  height: 56px;
+  width: 56px;
+
+  img{
+    border-radius: 50%;
+    border: solid 2px ${(props: Props) => props.theme.colors.divider};
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+`;
