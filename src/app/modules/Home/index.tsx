@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, CardListMotion } from './styles';
 import Card from '../../common/components/Card';
+import { stagger } from './animations';
 
 interface Card{
   id: string,
@@ -37,17 +38,7 @@ const cardData: Card[] = [
 const Home: React.FC = () => (
   <Container>
     <CardListMotion
-      variants={{
-        visible: {
-          opacity: 1,
-          scale: 1,
-          transition: {
-            delay: 0.0,
-            when: 'beforeChildren',
-            staggerChildren: 0.1,
-          },
-        },
-      }}
+      variants={stagger}
       initial="hidden"
       animate="visible"
     >
