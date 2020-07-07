@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContainerMotion } from './styles';
-import { item } from './animations';
+import { fadeInUp } from './animations';
 
 interface Props{
   src: string,
@@ -11,7 +11,7 @@ const Card: React.FC<Props> = (props) => {
 
   return (
     <ContainerMotion
-      variants={item}
+      variants={fadeInUp}
     >
       <img
         src={`images/${src}`}

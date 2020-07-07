@@ -39,8 +39,8 @@ const Home: React.FC = () => (
   <Container>
     <CardListMotion
       variants={stagger}
-      initial="hidden"
-      animate="visible"
+      initial="inital"
+      animate="animate"
     >
       {cardData.map((card: Card) => (
         <Card
