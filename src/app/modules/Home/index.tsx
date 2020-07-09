@@ -53,4 +53,6 @@ const Home: React.FC = () => (
   </Container>
 );
 
+// @TODO Adicionar progressive loading image
+
 export default Home;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { ContainerMotion } from './styles';
 import { fadeInUp } from './animations';
 
@@ -20,8 +21,9 @@ const Card: React.FC<Props> = (props) => {
     <ContainerMotion
       variants={fadeInUp}
     >
-      <img
+      <motion.img
         alt=""
+        whileHover={{ scale: 1.05 }}
         src={`images/${src}`}
         onClick={() => handleClick()}
       />
