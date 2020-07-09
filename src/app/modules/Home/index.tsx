@@ -45,6 +45,7 @@ const Home: React.FC = () => (
       {cardData.map((card: Card) => (
         <Card
           key={card.id}
+          id={card.id}
           src={card.src}
         />
       ))}

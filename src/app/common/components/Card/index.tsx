@@ -1,21 +1,29 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { ContainerMotion } from './styles';
 import { fadeInUp } from './animations';
 
 interface Props{
   src: string,
+  id: string,
 }
 
 const Card: React.FC<Props> = (props) => {
-  const { src } = props;
+  const { src, id } = props;
+  const history = useHistory();
+
+  function handleClick() {
+    history.push(`/post/${id}`);
+  }
 
   return (
     <ContainerMotion
       variants={fadeInUp}
     >
       <img
-        src={`images/${src}`}
         alt=""
+        src={`images/${src}`}
+        onClick={() => handleClick()}
       />
     </ContainerMotion>
   );

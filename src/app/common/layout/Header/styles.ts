@@ -28,3 +28,7 @@ export const Avatar = styled.div`
     height: 100%;
   }
 `;
+
+export const Date = styled.div`
+  cursor: pointer
+`;
