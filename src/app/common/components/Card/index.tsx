@@ -1,8 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ContainerMotion } from './styles';
-import { fadeInUp } from './animations';
+import { MotionContainer, MotionContent } from './styles';
+import { fadeInUp, transition } from './animations';
 
 interface Props{
   src: string,
@@ -18,16 +18,23 @@ const Card: React.FC<Props> = (props) => {
   }
 
   return (
-    <ContainerMotion
+    <MotionContainer
       variants={fadeInUp}
     >
       <motion.img
         alt=""
-        whileHover={{ scale: 1.05 }}
         src={`images/${src}`}
+        transition={transition}
+        whileHover={{ scale: 1.1 }}
         onClick={() => handleClick()}
       />
-    </ContainerMotion>
+      <MotionContent
+        exit={{ opacity: 0 }}
+        transition={transition}
+      >
+        teste
+      </MotionContent>
+    </MotionContainer>
   );
 };
 
