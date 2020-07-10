@@ -9,28 +9,37 @@ import Post from '../modules/Home/Post';
 const Routes: React.FC = () => (
   <BrowserRouter>
     <Navigation>
-      <AnimatePresence
-        // initial={false}
-        exitBeforeEnter
-      >
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={Home}
-          />
-          <Route
-            exact
-            path="/home"
-            component={Home}
-          />
-          <Route
-            exact
-            path="/post/:id"
-            component={Post}
-          />
-        </Switch>
-      </AnimatePresence>
+      <Route render={({ location }) => (
+        <AnimatePresence
+          initial={false}
+          exitBeforeEnter
+        >
+          <Switch
+            location={location}
+            key={location.pathname}
+          >
+            <Route
+              exact
+              path="/"
+              component={Home}
+              key="/"
+            />
+            <Route
+              exact
+              path="/home"
+              component={Home}
+              key="home"
+            />
+            <Route
+              exact
+              path="/post/:id"
+              component={Post}
+              key="post"
+            />
+          </Switch>
+        </AnimatePresence>
+      )}
+      />
     </Navigation>
   </BrowserRouter>
 );

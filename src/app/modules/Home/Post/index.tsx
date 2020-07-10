@@ -4,7 +4,11 @@ import {
 } from './styles';
 
 const Post: React.FC = () => (
-  <Container>
+  <Container
+    initial="initial"
+    animate="animate"
+    exit="exit"
+  >
     <Title>
       xxx
     </Title>
