@@ -8,7 +8,7 @@ import {
 } from './styles';
 
 const avatar = {
-  src: 'images/avatar.jpeg',
+  src: '../images/avatar.jpeg',
 };
 
 const Header: React.FC = () => {

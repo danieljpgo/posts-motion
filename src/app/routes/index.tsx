@@ -3,15 +3,15 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
 import Navigation from '../common/layout/Navigation';
-import Home from '../modules/Home';
-import Post from '../modules/Home/Post';
+import Home from '../pages/Home';
+import Post from '../pages/Post';
 
 const Routes: React.FC = () => (
   <BrowserRouter>
     <Navigation>
       <Route render={({ location }) => (
         <AnimatePresence
-          initial={false}
+          // initial={false}
           exitBeforeEnter
         >
           <Switch
