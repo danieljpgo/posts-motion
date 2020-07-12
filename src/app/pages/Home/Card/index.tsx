@@ -69,11 +69,3 @@ const Card: React.FC<Props> = (props) => {
 };
 
 export default Card;
-
-// // x: 0,
-// y: '-20vh',
-// left: 0,
-
-// // translateY: 209,
-// // translateX: -200,
-// scale: 1,

@@ -14,11 +14,9 @@ export const titleStagger = {
 
 export const titleLetter = {
   initial: {
-    // y: -100,
     opacity: 0,
   },
   animate: {
-    // y: 0,
     opacity: 1,
     transition: {
       duration: 1,

@@ -13,7 +13,7 @@ export interface Post{
 export const postData: Post[] = [
   {
     id: '1',
-    title: '5 Food Apps for delivery',
+    title: '5 Food Apps for Delivery',
     content: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur purus. In eu diam nec diam bibendum posuere nec sit amet nisi. Maecenas vitae consectetur ante. Integer convallis nibh sit amet mauris accumsan lacinia. Sed elementum ipsum posuere nunc tincidunt venenatis. Quisque placerat egestas est, ac rutrum nibh lacinia efficitur. Morbi in leo ante. In hac habitasse platea dictumst. In neque purus, congue vel eros venenatis, auctor vestibulum nisl. Sed nibh ligula, malesuada sit amet massa ut, lacinia molestie diam.',
       'Praesent ac fermentum purus. Cras ipsum leo, blandit sed fringilla eu, ultrices eu tortor. Praesent commodo nisl in scelerisque posuere. Aliquam malesuada lacus a sem eleifend, ac dapibus tellus fermentum. Vestibulum venenatis erat id metus venenatis, in volutpat nunc fringilla. Nam vel urna nec dui vehicula dapibus. Aenean varius a turpis in lobortis. Cras ac ante nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -22,14 +22,14 @@ export const postData: Post[] = [
     ],
     src: '1.jpg',
     info: {
-      date: 'May 1, 2019',
+      date: 'May 20, 2020',
       time: '2 min read',
     },
     type: 'Pizza',
   },
   {
     id: '2',
-    title: 'Untitle',
+    title: 'Arrange yout Apple Devices',
     content: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur purus. In eu diam nec diam bibendum posuere nec sit amet nisi. Maecenas vitae consectetur ante. Integer convallis nibh sit amet mauris accumsan lacinia. Sed elementum ipsum posuere nunc tincidunt venenatis. Quisque placerat egestas est, ac rutrum nibh lacinia efficitur. Morbi in leo ante. In hac habitasse platea dictumst. In neque purus, congue vel eros venenatis, auctor vestibulum nisl. Sed nibh ligula, malesuada sit amet massa ut, lacinia molestie diam.',
       'Praesent ac fermentum purus. Cras ipsum leo, blandit sed fringilla eu, ultrices eu tortor. Praesent commodo nisl in scelerisque posuere. Aliquam malesuada lacus a sem eleifend, ac dapibus tellus fermentum. Vestibulum venenatis erat id metus venenatis, in volutpat nunc fringilla. Nam vel urna nec dui vehicula dapibus. Aenean varius a turpis in lobortis. Cras ac ante nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -38,14 +38,14 @@ export const postData: Post[] = [
     ],
     src: '2.jpg',
     info: {
-      date: 'May 1, 2019',
+      date: 'May 15, 2020',
       time: '2 min read',
     },
-    type: 'Pizza',
+    type: 'Apple',
   },
   {
     id: '3',
-    title: 'Untitle',
+    title: 'Superior Mode of Transport',
     content: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur purus. In eu diam nec diam bibendum posuere nec sit amet nisi. Maecenas vitae consectetur ante. Integer convallis nibh sit amet mauris accumsan lacinia. Sed elementum ipsum posuere nunc tincidunt venenatis. Quisque placerat egestas est, ac rutrum nibh lacinia efficitur. Morbi in leo ante. In hac habitasse platea dictumst. In neque purus, congue vel eros venenatis, auctor vestibulum nisl. Sed nibh ligula, malesuada sit amet massa ut, lacinia molestie diam.',
       'Praesent ac fermentum purus. Cras ipsum leo, blandit sed fringilla eu, ultrices eu tortor. Praesent commodo nisl in scelerisque posuere. Aliquam malesuada lacus a sem eleifend, ac dapibus tellus fermentum. Vestibulum venenatis erat id metus venenatis, in volutpat nunc fringilla. Nam vel urna nec dui vehicula dapibus. Aenean varius a turpis in lobortis. Cras ac ante nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -54,14 +54,14 @@ export const postData: Post[] = [
     ],
     src: '3.jpg',
     info: {
-      date: 'May 1, 2019',
+      date: 'May 12, 2020',
       time: '2 min read',
     },
-    type: 'Pizza',
+    type: 'Transport',
   },
   {
     id: '4',
-    title: 'Untitle',
+    title: 'Cats and their Peculiarities',
     content: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur purus. In eu diam nec diam bibendum posuere nec sit amet nisi. Maecenas vitae consectetur ante. Integer convallis nibh sit amet mauris accumsan lacinia. Sed elementum ipsum posuere nunc tincidunt venenatis. Quisque placerat egestas est, ac rutrum nibh lacinia efficitur. Morbi in leo ante. In hac habitasse platea dictumst. In neque purus, congue vel eros venenatis, auctor vestibulum nisl. Sed nibh ligula, malesuada sit amet massa ut, lacinia molestie diam.',
       'Praesent ac fermentum purus. Cras ipsum leo, blandit sed fringilla eu, ultrices eu tortor. Praesent commodo nisl in scelerisque posuere. Aliquam malesuada lacus a sem eleifend, ac dapibus tellus fermentum. Vestibulum venenatis erat id metus venenatis, in volutpat nunc fringilla. Nam vel urna nec dui vehicula dapibus. Aenean varius a turpis in lobortis. Cras ac ante nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -70,14 +70,14 @@ export const postData: Post[] = [
     ],
     src: '4.jpg',
     info: {
-      date: 'May 1, 2019',
+      date: 'May 10, 2020',
       time: '2 min read',
     },
-    type: 'Pizza',
+    type: 'Pets',
   },
   {
     id: '5',
-    title: 'Untitle',
+    title: 'Covid and the new Home Cooking',
     content: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur purus. In eu diam nec diam bibendum posuere nec sit amet nisi. Maecenas vitae consectetur ante. Integer convallis nibh sit amet mauris accumsan lacinia. Sed elementum ipsum posuere nunc tincidunt venenatis. Quisque placerat egestas est, ac rutrum nibh lacinia efficitur. Morbi in leo ante. In hac habitasse platea dictumst. In neque purus, congue vel eros venenatis, auctor vestibulum nisl. Sed nibh ligula, malesuada sit amet massa ut, lacinia molestie diam.',
       'Praesent ac fermentum purus. Cras ipsum leo, blandit sed fringilla eu, ultrices eu tortor. Praesent commodo nisl in scelerisque posuere. Aliquam malesuada lacus a sem eleifend, ac dapibus tellus fermentum. Vestibulum venenatis erat id metus venenatis, in volutpat nunc fringilla. Nam vel urna nec dui vehicula dapibus. Aenean varius a turpis in lobortis. Cras ac ante nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -86,14 +86,14 @@ export const postData: Post[] = [
     ],
     src: '5.jpg',
     info: {
-      date: 'May 1, 2019',
-      time: '2 min read',
+      date: 'May 10, 2020',
+      time: '5 min read',
     },
-    type: 'Pizza',
+    type: 'Cooking',
   },
   {
     id: '6',
-    title: 'Untitle',
+    title: 'Architecture of the Future',
     content: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur purus. In eu diam nec diam bibendum posuere nec sit amet nisi. Maecenas vitae consectetur ante. Integer convallis nibh sit amet mauris accumsan lacinia. Sed elementum ipsum posuere nunc tincidunt venenatis. Quisque placerat egestas est, ac rutrum nibh lacinia efficitur. Morbi in leo ante. In hac habitasse platea dictumst. In neque purus, congue vel eros venenatis, auctor vestibulum nisl. Sed nibh ligula, malesuada sit amet massa ut, lacinia molestie diam.',
       'Praesent ac fermentum purus. Cras ipsum leo, blandit sed fringilla eu, ultrices eu tortor. Praesent commodo nisl in scelerisque posuere. Aliquam malesuada lacus a sem eleifend, ac dapibus tellus fermentum. Vestibulum venenatis erat id metus venenatis, in volutpat nunc fringilla. Nam vel urna nec dui vehicula dapibus. Aenean varius a turpis in lobortis. Cras ac ante nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
@@ -102,9 +102,9 @@ export const postData: Post[] = [
     ],
     src: '6.jpg',
     info: {
-      date: 'May 1, 2019',
-      time: '2 min read',
+      date: 'May 9, 2020',
+      time: '4 min read',
     },
-    type: 'Pizza',
+    type: 'architecture',
   },
 ];
