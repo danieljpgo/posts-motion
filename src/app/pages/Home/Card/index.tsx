@@ -1,7 +1,11 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Container, Content } from './styles';
+import {
+  Container,
+  ImageContainer,
+  Image,
+  Content,
+} from './styles';
 import { fadeInUp, transition } from './animations';
 
 interface Props{
@@ -22,34 +26,36 @@ const Card: React.FC<Props> = (props) => {
     <Container
       variants={fadeInUp}
     >
-      <motion.img
-        alt=""
-        src={`images/${src}`}
-        transition={{ duration: 6 }}
+      <ImageContainer>
+        <Image
+          alt=""
+          src={`images/${src}`}
+          transition={transition}
         // whileHover={{ scale: 1.05 }}
-        initial="initial"
-        animate="animate"
-        exit={selected
-          ? {
-            position: 'fixed',
-            borderRadius: 0,
-            zIndex: 2,
-            width: '100vw',
-            height: 420,
-            top: 209,
-            left: 0,
-          }
-          : { opacity: 0 }}
-        onClick={() => handleClick()}
-      />
-      <Content
-        initial="initial"
-        animate="animate"
-        exit={{ opacity: 0 }}
-        transition={transition}
-      >
-        teste
-      </Content>
+          initial="initial"
+          animate="animate"
+          exit={selected
+            ? {
+              position: 'fixed',
+              borderRadius: 0,
+              zIndex: 2,
+              width: '100vw',
+              height: 420,
+              top: 209,
+              left: 0,
+            }
+            : { opacity: 0 }}
+          onClick={() => handleClick()}
+        />
+        <Content
+          initial="initial"
+          animate="animate"
+          exit={{ opacity: 0 }}
+          transition={transition}
+        >
+          teste
+        </Content>
+      </ImageContainer>
     </Container>
   );
 };

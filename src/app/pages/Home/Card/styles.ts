@@ -17,12 +17,7 @@ export const Container = styled(motion.div)`
     max-width: calc(60% - ${(props: Props) => props.theme.unit * 2}px);
   }
 
-  img{
-    border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
-    object-fit: cover;
-    width: 100%;
-    height: 320px;
-  }
+ 
 
 
   @media only screen and (max-width: ${(props: Props) => props.theme.breakpoints.medium}px) {
@@ -46,6 +41,17 @@ export const Container = styled(motion.div)`
       max-width: calc(100% - ${(props: Props) => props.theme.unit * 2}px);
     }
   }
+`;
+
+export const ImageContainer = styled(motion.div)`
+  position: relative;
+`;
+
+export const Image = styled(motion.img)`
+  border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
 `;
 
 export const Content = styled(motion.div)`
