@@ -42,12 +42,14 @@ export const Container = styled(motion.div)`
 
 export const ImageContainer = styled(motion.div)`
   position: relative;
+  background: #a1a1a130;
 `;
 
 export const Image = styled(motion.img)`
   border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 `;
 
 export const Content = styled(motion.div)`

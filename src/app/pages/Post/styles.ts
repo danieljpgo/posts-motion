@@ -14,7 +14,7 @@ export const ImageContainer = styled(motion.div)`
   z-index: 3;
 `;
 
-export const Image = styled(motion.img)`
+export const Img = styled(motion.img)`
   width: 100%;
   object-fit: cover;
 `;

@@ -1,12 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import ProgressiveImage from 'react-progressive-image';
+import { fadeInUp, transition, transitionImg } from './animations';
 import {
   Container,
   ImageContainer,
   Image,
   Content,
 } from './styles';
-import { fadeInUp, transition, transitionImg } from './animations';
 
 interface Props{
   id: string,
@@ -34,26 +35,43 @@ const Card: React.FC<Props> = (props) => {
     <Container
       variants={fadeInUp}
     >
-      <ImageContainer onClick={() => handleClick()}>
-        <Image
-          alt=""
+      <ImageContainer
+        onClick={() => handleClick()}
+        transition={transition}
+        initial={{ height: 320 }}
+        animate="animate"
+        exit={selected
+          ? {
+            zIndex: 2,
+            height: 0,
+            scale: 1.05,
+            backgroundColor: 'transparent',
+            transition: {
+              delay: 0.1,
+              ...transitionImg,
+            },
+          }
+          : {
+            opacity: 0,
+            backgroundColor: 'transparent',
+          }}
+      >
+        <ProgressiveImage
           src={`images/${src}`}
-          transition={transition}
-          whileHover={{ scale: 1.05 }}
-          initial={{ height: 320 }}
-          animate="animate"
-          exit={selected
-            ? {
-              zIndex: 2,
-              height: 0,
-              scale: 1.05,
-              transition: {
-                delay: 0.1,
-                ...transitionImg,
-              },
-            }
-            : { opacity: 0 }}
-        />
+          placeholder={`images/compressed/${src}`}
+        >
+          {(img: any) => (
+            <Image
+              alt=""
+              src={img}
+              whileHover={{ scale: 1.05 }}
+              exit={selected
+                ? { scale: 1.05 }
+                : {}}
+              transition={transition}
+            />
+          )}
+        </ProgressiveImage>
         <Content
           initial="initial"
           animate="animate"

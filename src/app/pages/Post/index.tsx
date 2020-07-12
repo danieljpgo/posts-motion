@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouteMatch, useHistory } from 'react-router-dom';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import { postData } from '../../common/utils/posts';
@@ -8,7 +8,7 @@ import {
   Container,
   Title,
   ImageContainer,
-  Image,
+  Img,
   Content,
   Text,
   SubHeader,
@@ -17,6 +17,8 @@ import {
 } from './styles';
 
 const Post: React.FC = () => {
+  const [show, setShow] = useState<boolean>(false);
+
   const history = useHistory();
   const match = useRouteMatch();
   const { scrollYProgress } = useViewportScroll();
@@ -27,7 +29,10 @@ const Post: React.FC = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    const image = new Image();
+    image.src = data ? `../images/${data.src}` : '';
+    image.onload = () => setShow(true);
+  }, [data]);
 
   function handleBack() {
     history.push('/home');
@@ -57,7 +62,8 @@ const Post: React.FC = () => {
       </SubHeader>
       <Content>
         <ImageContainer>
-          <Image
+          {show && (
+          <Img
             style={{ scale: scaleScroll }}
             initial={{ height: 0 }}
             animate={{ height: 420 }}
@@ -65,6 +71,7 @@ const Post: React.FC = () => {
             alt={data?.title}
             src={data && `../images/${data.src}`}
           />
+          )}
         </ImageContainer>
         <Title variants={titleStagger}>
           {title.map((letter, index) => (
