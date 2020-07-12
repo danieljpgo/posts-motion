@@ -1,47 +1,32 @@
 import React from 'react';
-import { useRouteMatch } from 'react-router-dom';
+import { useRouteMatch, useHistory } from 'react-router-dom';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import { postData } from '../../common/utils/posts';
+import { titleStagger, titleLetter } from './animations';
+import { transitionWithDelay } from '../../common/utils/animations';
 import {
   Container,
   Title,
   ImageContainer,
+  Image,
   Content,
+  SubHeader,
+  Back,
+  Info,
 } from './styles';
 
-const title = {
-  initial: {
-    y: 0,
-  },
-  animate: {
-    y: 0,
-    transition: {
-      delayChildren: 0.6,
-      staggerChildren: 0.04,
-      staggerDirection: -1,
-    },
-  },
-};
-
-const titleLetter = {
-  initial: {
-    y: 400,
-  },
-  animate: {
-    y: 0,
-    transition: {
-      duration: 1,
-      ease: [0.43, 0.13, 0.23, 0.96],
-    },
-  },
-};
-
 const Post: React.FC = () => {
+  const history = useHistory();
   const match = useRouteMatch();
-  const data = postData.find((post) => post.id === (match.params as any)?.id);
-
   const { scrollYProgress } = useViewportScroll();
   const scaleScroll = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
+
+  const data = postData.find((post) => post.id === (match.params as any)?.id);
+  const title = data ? data.title.split('') : [];
+
+  function handleBack() {
+    history.push('/home');
+  }
 
   return (
     <Container
@@ -49,22 +34,56 @@ const Post: React.FC = () => {
       animate="animate"
       exit="exit"
     >
-
-      <Title variants={title}>
-        {data && data.title.split('').map((letter, index) => (
-          <motion.h1 key={(letter + index.toString())} variants={titleLetter}>{letter}</motion.h1>
-        ))}
-      </Title>
+      <SubHeader
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ...transitionWithDelay, delay: 1.4 }}
+      >
+        <Back
+          whileHover={{ x: 20 }}
+          whileTap={{ x: 0 }}
+          onClick={() => handleBack()}
+        >
+          Back to home
+        </Back>
+        <Info>
+          <span>{`${data?.info.date} - ${data?.info.time}`}</span>
+        </Info>
+      </SubHeader>
       <ImageContainer>
-        <motion.img
+        <Image
           style={{ scale: scaleScroll }}
-          // initial={{ scale: 1.05 }}
+          initial={{
+            scale: 1.05,
+            height: 0,
+          }}
+          animate={{
+            scale: 1,
+            height: 420,
+          }}
+          transition={transitionWithDelay}
           alt={data?.title}
           src={data && `../images/${data.src}`}
         />
       </ImageContainer>
-      <Content>
-        {data?.content}
+      <Title variants={titleStagger}>
+        {title.map((letter, index) => (
+          <motion.h1
+            key={(letter + index.toString())}
+            variants={titleLetter}
+          >
+            {letter}
+          </motion.h1>
+        ))}
+      </Title>
+      <Content
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={transitionWithDelay}
+      >
+        {data?.content.map((paragraph, index) => (
+          <div key={index}>{paragraph}</div>
+        ))}
       </Content>
     </Container>
   );

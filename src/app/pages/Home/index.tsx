@@ -10,7 +10,6 @@ const Home: React.FC = () => {
   const history = useHistory();
 
   const id = history.location.pathname.split('/')[2];
-  console.log(id);
 
   return (
     <Container>

@@ -30,5 +30,6 @@ export const Avatar = styled.div`
 `;
 
 export const Date = styled.div`
-  cursor: pointer
+  cursor: pointer;
+  color: ${(props: Props) => props.theme.colors.subtext}
 `;

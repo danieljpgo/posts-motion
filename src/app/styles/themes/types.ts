@@ -2,29 +2,37 @@ export interface Props{
   theme: Theme,
 }
 
-export interface Theme{
+interface Theme{
   title: string,
   unit: number,
   colors: Colors,
   shapes: Shapes,
   breakpoints: Breakpoints,
+  fontSize: FontSize,
 }
 
-export interface Colors{
+interface Colors{
   primary: string,
   secundary: string,
   warning: string,
   divider: string,
   text: string,
+  subtext: string,
   title: string,
   background: string,
 }
 
-export interface Shapes{
+interface Shapes{
   borderRadius: number,
 }
 
-export interface Breakpoints{
+interface Breakpoints{
   small: number,
   medium: number,
+}
+
+interface FontSize{
+  big: number,
+  medium: number,
+  small: number,
 }

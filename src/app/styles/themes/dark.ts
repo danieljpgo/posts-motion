@@ -9,7 +9,8 @@ export default {
     primary: '#b2ebf2',
     secundary: 'rgb(161, 161, 161)',
     warning: '',
-    text: '#a1a1a1',
+    text: '#ffffff',
+    subtext: '#a1a1a1',
     title: '#ffffff',
     divider: '#343434',
     background: 'black',
@@ -22,5 +23,11 @@ export default {
   breakpoints: {
     small: 680,
     medium: 860,
+  },
+
+  fontSize: {
+    big: 48,
+    medium: 26,
+    small: 13,
   },
 };

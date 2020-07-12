@@ -26,27 +26,25 @@ const Card: React.FC<Props> = (props) => {
     <Container
       variants={fadeInUp}
     >
-      <ImageContainer>
+      <ImageContainer onClick={() => handleClick()}>
         <Image
           alt=""
           src={`images/${src}`}
           transition={transition}
-        // whileHover={{ scale: 1.05 }}
-          initial="initial"
+          whileHover={{ scale: 1.05 }}
+          initial={{ height: 320 }}
           animate="animate"
           exit={selected
             ? {
-              position: 'fixed',
-              borderRadius: 0,
               zIndex: 2,
-              width: '100vw',
-              height: 420,
-              top: 209,
-              left: 0,
-              transition: { delay: 0.1, ...transitionImg },
+              height: 0,
+              scale: 1.05,
+              transition: {
+                delay: 0.1,
+                ...transitionImg,
+              },
             }
             : { opacity: 0 }}
-          onClick={() => handleClick()}
         />
         <Content
           initial="initial"
