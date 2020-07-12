@@ -2,12 +2,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Props } from '../../../styles/themes/types';
 
-export const MotionContainer = styled(motion.div)`
+export const Container = styled(motion.div)`
   margin: ${(props: Props) => props.theme.unit}px;
   border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
   height: 320px;
   overflow: hidden;
-  position: relative;
   
   flex: 0 0 calc(40% - ${(props: Props) => props.theme.unit * 2}px);
   max-width: calc(40% - ${(props: Props) => props.theme.unit * 2}px);
@@ -22,7 +21,7 @@ export const MotionContainer = styled(motion.div)`
     border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 320px;
   }
 
 
@@ -49,7 +48,7 @@ export const MotionContainer = styled(motion.div)`
   }
 `;
 
-export const MotionContent = styled(motion.div)`
+export const Content = styled(motion.div)`
   position: absolute;
   z-index: 2;
   top: 0;

@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.main`
-  height: calc(100vh - 90px);
+  height: calc(100vh - 92px);
   overflow: auto;
   padding: ${(props: Props) => props.theme.unit}px 0 ${(props: Props) => props.theme.unit}px;
 

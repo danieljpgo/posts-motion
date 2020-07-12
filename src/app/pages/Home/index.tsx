@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Container, CardListMotion } from './styles';
 import { stagger } from './animations';
 import { postData } from '../../common/utils/posts';
@@ -6,6 +7,10 @@ import Card from './Card';
 
 const Home: React.FC = () => {
   const data = postData;
+  const history = useHistory();
+
+  const id = history.location.pathname.split('/')[2];
+  console.log(id);
 
   return (
     <Container>
@@ -19,6 +24,7 @@ const Home: React.FC = () => {
             key={post.id}
             id={post.id}
             src={post.src}
+            selected={post.id === id}
           />
         ))}
       </CardListMotion>

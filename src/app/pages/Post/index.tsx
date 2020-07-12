@@ -3,8 +3,9 @@ import { useRouteMatch } from 'react-router-dom';
 import {
   Container,
   Title,
-  Img,
-  Text,
+  ImageContainer,
+  Image,
+  Content,
 } from './styles';
 import { postData } from '../../common/utils/posts';
 
@@ -18,14 +19,20 @@ const Post: React.FC = () => {
       animate="animate"
       exit="exit"
     >
-      <Title>{data?.title}</Title>
-      <Img
-        alt={data?.title}
-        src={data && `../images/${data.src}`}
-      />
-      <Text>
+
+      <Title>
+        <h1>{data?.title}</h1>
+      </Title>
+      <ImageContainer>
+        <Image
+          // initial={{ scale: 1.05 }}
+          alt={data?.title}
+          src={data && `../images/${data.src}`}
+        />
+      </ImageContainer>
+      <Content>
         {data?.content}
-      </Text>
+      </Content>
     </Container>
   );
 };
