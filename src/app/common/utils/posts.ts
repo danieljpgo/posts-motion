@@ -6,7 +6,8 @@ export interface Post{
   info: {
     date: string,
     time: string,
-  }
+  },
+  type: string
 }
 
 export const postData: Post[] = [
@@ -24,6 +25,7 @@ export const postData: Post[] = [
       date: 'May 1, 2019',
       time: '2 min read',
     },
+    type: 'Pizza',
   },
   {
     id: '2',
@@ -39,6 +41,7 @@ export const postData: Post[] = [
       date: 'May 1, 2019',
       time: '2 min read',
     },
+    type: 'Pizza',
   },
   {
     id: '3',
@@ -54,6 +57,7 @@ export const postData: Post[] = [
       date: 'May 1, 2019',
       time: '2 min read',
     },
+    type: 'Pizza',
   },
   {
     id: '4',
@@ -69,6 +73,7 @@ export const postData: Post[] = [
       date: 'May 1, 2019',
       time: '2 min read',
     },
+    type: 'Pizza',
   },
   {
     id: '5',
@@ -84,6 +89,7 @@ export const postData: Post[] = [
       date: 'May 1, 2019',
       time: '2 min read',
     },
+    type: 'Pizza',
   },
   {
     id: '6',
@@ -99,5 +105,6 @@ export const postData: Post[] = [
       date: 'May 1, 2019',
       time: '2 min read',
     },
+    type: 'Pizza',
   },
 ];

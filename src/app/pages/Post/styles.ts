@@ -29,7 +29,7 @@ export const Title = styled(motion.div)`
   }
 `;
 
-export const Content = styled(motion.div)`
+export const Text = styled(motion.div)`
   font-size: ${(props: Props) => props.theme.fontSize.medium}px;
   div{
     padding: ${(props: Props) => props.theme.unit}px 0;
@@ -40,7 +40,6 @@ export const SubHeader = styled(motion.div)`
   padding-bottom: ${(props: Props) => props.theme.unit}px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 `;
 export const Back = styled(motion.div)`
   cursor: pointer;
@@ -52,6 +51,11 @@ export const Back = styled(motion.div)`
 `;
 export const Info = styled(motion.div)`
   display: flex;
+  flex-wrap: wrap;
   color: ${(props: Props) => props.theme.colors.subtext};
   font-size: ${(props: Props) => props.theme.fontSize.small}px;
+`;
+
+export const Content = styled.div`
+  padding: 0 ${(props: Props) => props.theme.unit}px
 `;

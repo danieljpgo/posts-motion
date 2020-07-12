@@ -11,11 +11,19 @@ import { fadeInUp, transition, transitionImg } from './animations';
 interface Props{
   id: string,
   src: string,
+  title: string,
+  type: string,
   selected: boolean,
 }
 
 const Card: React.FC<Props> = (props) => {
-  const { id, src, selected } = props;
+  const {
+    id,
+    src,
+    title,
+    type,
+    selected,
+  } = props;
   const history = useHistory();
 
   function handleClick() {
@@ -52,7 +60,8 @@ const Card: React.FC<Props> = (props) => {
           exit={{ opacity: 0 }}
           transition={transition}
         >
-          teste
+          <div>{type}</div>
+          <h1>{title}</h1>
         </Content>
       </ImageContainer>
     </Container>

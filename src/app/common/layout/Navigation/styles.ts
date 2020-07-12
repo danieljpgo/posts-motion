@@ -6,6 +6,10 @@ export const Container = styled.div`
   margin: 0 auto;
   min-height: 100vh;
   padding: 0 ${(props: Props) => props.theme.unit * 2}px;
+
+  @media only screen and (max-width: ${(props: Props) => props.theme.breakpoints.small}px) {
+    padding: 0 ${(props: Props) => props.theme.unit}px;
+  }
 `;
 
 export const Content = styled.main`

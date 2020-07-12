@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useRouteMatch, useHistory } from 'react-router-dom';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import { postData } from '../../common/utils/posts';
@@ -10,6 +10,7 @@ import {
   ImageContainer,
   Image,
   Content,
+  Text,
   SubHeader,
   Back,
   Info,
@@ -23,6 +24,10 @@ const Post: React.FC = () => {
 
   const data = postData.find((post) => post.id === (match.params as any)?.id);
   const title = data ? data.title.split('') : [];
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   function handleBack() {
     history.push('/home');
@@ -50,40 +55,37 @@ const Post: React.FC = () => {
           <span>{`${data?.info.date} - ${data?.info.time}`}</span>
         </Info>
       </SubHeader>
-      <ImageContainer>
-        <Image
-          style={{ scale: scaleScroll }}
-          initial={{
-            scale: 1.05,
-            height: 0,
-          }}
-          animate={{
-            scale: 1,
-            height: 420,
-          }}
+      <Content>
+        <ImageContainer>
+          <Image
+            style={{ scale: scaleScroll }}
+            initial={{ height: 0 }}
+            animate={{ height: 420 }}
+            transition={transitionWithDelay}
+            alt={data?.title}
+            src={data && `../images/${data.src}`}
+          />
+        </ImageContainer>
+        <Title variants={titleStagger}>
+          {title.map((letter, index) => (
+            <motion.h1
+              key={(letter + index.toString())}
+              variants={titleLetter}
+            >
+              {letter}
+            </motion.h1>
+          ))}
+        </Title>
+        <Text
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={transitionWithDelay}
-          alt={data?.title}
-          src={data && `../images/${data.src}`}
-        />
-      </ImageContainer>
-      <Title variants={titleStagger}>
-        {title.map((letter, index) => (
-          <motion.h1
-            key={(letter + index.toString())}
-            variants={titleLetter}
-          >
-            {letter}
-          </motion.h1>
-        ))}
-      </Title>
-      <Content
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={transitionWithDelay}
-      >
-        {data?.content.map((paragraph, index) => (
-          <div key={index}>{paragraph}</div>
-        ))}
+        >
+          {data?.content.map((paragraph, index) => (
+            <div key={index}>{paragraph}</div>
+          ))}
+        </Text>
+
       </Content>
     </Container>
   );

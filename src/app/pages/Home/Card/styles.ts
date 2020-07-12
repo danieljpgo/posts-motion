@@ -7,7 +7,7 @@ export const Container = styled(motion.div)`
   border-radius: ${(props: Props) => props.theme.shapes.borderRadius}px;
   height: 320px;
   overflow: hidden;
-  
+  cursor: pointer;
   flex: 0 0 calc(40% - ${(props: Props) => props.theme.unit * 2}px);
   max-width: calc(40% - ${(props: Props) => props.theme.unit * 2}px);
   
@@ -15,10 +15,7 @@ export const Container = styled(motion.div)`
   &:nth-child(4n + 4) {
     flex: 0 0 calc(60% - ${(props: Props) => props.theme.unit * 2}px);
     max-width: calc(60% - ${(props: Props) => props.theme.unit * 2}px);
-  }
-
- 
-
+  } 
 
   @media only screen and (max-width: ${(props: Props) => props.theme.breakpoints.medium}px) {
     flex: 0 0 calc(50% - ${(props: Props) => props.theme.unit * 2}px);
@@ -58,4 +55,11 @@ export const Content = styled(motion.div)`
   z-index: 2;
   top: 0;
   left: 0;
+  width: 100%;
+  padding: ${(props: Props) => props.theme.unit}px;
+  display: grid;
+  grid-gap: ${(props: Props) => props.theme.unit / 2}px;
+  h1{
+    font-size: ${(props: Props) => props.theme.fontSize.medium}px;
+  }
 `;

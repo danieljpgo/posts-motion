@@ -23,6 +23,8 @@ const Home: React.FC = () => {
             key={post.id}
             id={post.id}
             src={post.src}
+            type={post.type}
+            title={post.title}
             selected={post.id === id}
           />
         ))}
