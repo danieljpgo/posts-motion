@@ -8,7 +8,7 @@ export interface Post{
 export const postData: Post[] = [
   {
     id: '1',
-    title: 'Untitle',
+    title: '5 Food Apps for delivery',
     content: 'Content',
     src: '1.jpg',
   },

@@ -6,7 +6,7 @@ import {
   Image,
   Content,
 } from './styles';
-import { fadeInUp, transition } from './animations';
+import { fadeInUp, transition, transitionImg } from './animations';
 
 interface Props{
   id: string,
@@ -43,6 +43,7 @@ const Card: React.FC<Props> = (props) => {
               height: 420,
               top: 209,
               left: 0,
+              transition: { delay: 0.1, ...transitionImg },
             }
             : { opacity: 0 }}
           onClick={() => handleClick()}
