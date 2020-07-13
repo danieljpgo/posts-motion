@@ -33,6 +33,7 @@ interface Breakpoints{
 
 interface FontSize{
   big: number,
+  large: number,
   medium: number,
   small: number,
 }

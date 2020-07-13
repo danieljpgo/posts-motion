@@ -42,7 +42,6 @@ export const Container = styled(motion.div)`
 
 export const ImageContainer = styled(motion.div)`
   position: relative;
-  background: #a1a1a130;
 `;
 
 export const Image = styled(motion.img)`

@@ -39,14 +39,17 @@ const Card: React.FC<Props> = (props) => {
       <ImageContainer
         onClick={() => handleClick()}
         transition={transition}
-        initial={{ height: 320 }}
+        initial={{
+          height: 320,
+          backgroundColor: 'a1a1a130',
+        }}
         animate="animate"
         exit={selected
           ? {
             zIndex: 2,
             height: 0,
             scale: 1.05,
-            backgroundColor: 'transparent',
+            backgroundColor: 'a1a1a100',
             transition: {
               delay: 0.1,
               ...transitionImg,
@@ -54,7 +57,7 @@ const Card: React.FC<Props> = (props) => {
           }
           : {
             opacity: 0,
-            backgroundColor: 'transparent',
+            backgroundColor: 'a1a1a100',
           }}
       >
         <ProgressiveImage
