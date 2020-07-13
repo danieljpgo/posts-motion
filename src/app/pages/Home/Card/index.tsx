@@ -25,6 +25,7 @@ const Card: React.FC<Props> = (props) => {
     type,
     selected,
   } = props;
+
   const history = useHistory();
 
   function handleClick() {
@@ -62,7 +63,7 @@ const Card: React.FC<Props> = (props) => {
         >
           {(img: any) => (
             <Image
-              alt=""
+              alt={title}
               src={img}
               whileHover={{ scale: 1.05 }}
               exit={selected
