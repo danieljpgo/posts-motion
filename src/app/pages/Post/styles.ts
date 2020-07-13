@@ -22,6 +22,7 @@ export const Img = styled(motion.img)`
 export const Title = styled(motion.div)`
   padding: ${(props: Props) => props.theme.unit * 2}px 0;
   display: flex;
+  flex-wrap: wrap;
   z-index: 2;
   h1{
     font-size: ${(props: Props) => props.theme.fontSize.big}px;
