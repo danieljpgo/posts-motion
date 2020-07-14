@@ -21,11 +21,10 @@ const Footer: React.FC = () => (
         <div>
           <span>
             a proof of concept using
-            <a href="https://www.framer.com/motion/">
-              framer motion
-            </a>
-            to display posts
           </span>
+          <a href="https://www.framer.com/motion/">
+            framer motion.
+          </a>
         </div>
       </Project>
       <Contact>

@@ -30,7 +30,7 @@ export const Title = styled(motion.div)`
   }
 `;
 
-export const Text = styled(motion.div)`
+export const Text = styled(motion.article)`
   font-size: ${(props: Props) => props.theme.fontSize.medium}px;
   div{
     padding: ${(props: Props) => props.theme.unit}px 0;

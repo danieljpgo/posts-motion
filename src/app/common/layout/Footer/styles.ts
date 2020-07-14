@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Props } from '../../../styles/themes/types';
 
-export const Container = styled(motion.div)`
+export const Container = styled(motion.footer)`
   padding: 
     ${(props: Props) => props.theme.unit * 2}px
     0
@@ -36,7 +36,7 @@ export const Project = styled.div`
 export const Contact = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
 `;
 
 export const Icons = styled.div`
@@ -49,6 +49,8 @@ export const Icons = styled.div`
     text-decoration: none;
     color: ${(props: Props) => props.theme.colors.text};
     transition: color ease-in-out 0.2s;
+    display: flex;
+    align-items: flex-end;
     &:hover{
       color: ${(props: Props) => props.theme.colors.subtext};
     }
