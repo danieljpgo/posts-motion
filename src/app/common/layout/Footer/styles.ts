@@ -9,17 +9,18 @@ export const Container = styled(motion.footer)`
     ${(props: Props) => props.theme.unit * 2}px
     0;
   border-top: solid 1px ${(props: Props) => props.theme.colors.divider};
+  font-size: ${(props: Props) => props.theme.fontSize.small}px;
 `;
 
 export const About = styled.div`
   display: grid;
-  grid-gap: ${(props: Props) => props.theme.unit}px;
+  grid-gap: ${(props: Props) => props.theme.unit / 2}px;
 `;
 
 export const Project = styled.div`
   display: grid;
-  grid-gap: ${(props: Props) => props.theme.unit / 2}px;
-  h1{
+  grid-gap: ${(props: Props) => props.theme.unit / 4}px;
+  h2{
     font-size: ${(props: Props) => props.theme.fontSize.medium}px;
   }
   a{
@@ -42,8 +43,8 @@ export const Contact = styled.div`
 export const Icons = styled.div`
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: ${(props: Props) => props.theme.unit / 2}px;
-  font-size: ${(props: Props) => props.theme.fontSize.large}px;
+  grid-gap: ${(props: Props) => props.theme.unit / 4}px;
+  font-size: ${(props: Props) => props.theme.fontSize.medium}px;
    a{
     margin: 0 6px;
     text-decoration: none;

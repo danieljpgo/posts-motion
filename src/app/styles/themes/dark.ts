@@ -29,6 +29,6 @@ export default {
     big: 48,
     large: 32,
     medium: 26,
-    small: 13,
+    small: 14,
   },
 };

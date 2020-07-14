@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
   >
     <About>
       <Project>
-        <h1>Post Motion</h1>
+        <h2>Post Motion</h2>
         <div>
           <span>
             a proof of concept using
