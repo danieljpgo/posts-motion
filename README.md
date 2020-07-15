@@ -11,7 +11,7 @@
       src=".github/framer-motion.png"
       height="130px" />
 </h1>
-&nbsp;
+
 <h1 align="left">Post Motion</h1>
 
 <p align="left">
@@ -45,7 +45,7 @@
 
 > Display posts with beautiful animations. :mailbox_with_mail:
 
-
+&nbsp;
 <p align="center">
    <a href="#memo-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#rocket-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -68,31 +68,38 @@ The project aims to exemplify a list of posts using the **production-ready** **[
 ## :rocket: Features
 The main features of the project are the following animations:
 - **Stepper**.
+<div>
 <img
   alt="Post Motion"
   title="Post Motion"
   src=".github/step-1.gif"
   width="200px" />
+</div>
+<div>
 <img
   alt="Post Motion"
   title="Post Motion"
   src=".github/step-2.gif"
   width="200px" />
+</div>
 
 - **Transition Page**.
+<div>
 <img
   alt="Post Motion"
   title="Post Motion"
   src=".github/transition.gif"
   width="200px" />
+</div>
 
 - **Scale Image relative to Page View**.
+<div>
 <img
   alt="Post Motion"
   title="Post Motion"
   src=".github/scale.gif"
   width="200px" />
-
+</div>
 
 ## :man_technologist: Technologies
 The main technologies used to develop the project were:
