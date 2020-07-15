@@ -1,4 +1,5 @@
-<h1 align="center">
+&nbsp;
+<div align="center">
     <img
       alt="Post Motion"
       title="Post Motion"
@@ -10,7 +11,8 @@
       title="Post Motion"
       src=".github/framer-motion.png"
       height="130px" />
-</h1>
+</div>
+&nbsp;
 
 <h1 align="left">Post Motion</h1>
 
