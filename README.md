@@ -48,6 +48,7 @@
 > Display posts with beautiful animations. :mailbox_with_mail:
 
 &nbsp;
+
 <p align="center">
    <a href="#memo-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#rocket-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -56,13 +57,15 @@
    <a href="#page_with_curl-license">License</a>
 </p>
 
-<h1 align="center">
+&nbsp;
+
+<div align="center">
    <img
       alt="Post Motion"
       title="Post Motion"
       src=".github/web-mobile.gif"
       width="640px" />
-</h1>
+</div>
 
 ## :memo: Project
 The project aims to exemplify a list of posts using the **production-ready** **[framer motion](https://www.framer.com/motion/)** library to create **beautiful animations**, with **good performance**.
