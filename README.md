@@ -69,7 +69,7 @@ The project aims to exemplify a list of posts using the **production-ready** **[
 
 ## :rocket: Features
 The main features of the project are the following animations:
-- **Stepper Animation**.
+- **Stagger Animation**.
 <div align="center">
 <img 
   alt="Post Motion"
@@ -88,7 +88,7 @@ The main features of the project are the following animations:
 
 &nbsp;
 
-- **Transition Page**.
+- **Page Transition**.
 <div align="center">
 <img
   alt="Post Motion"
@@ -97,13 +97,15 @@ The main features of the project are the following animations:
   width="540px" />
 </div>
 
-- **Scale Image relative to Page View**.
+&nbsp;
+
+- **Scale relative to page view**.
 <div align="center">
 <img
   alt="Post Motion"
   title="Post Motion"
-  src=".github/scale.gif"
-  width="200px" />
+  src=".github/scroll.gif"
+  width="540px" />
 </div>
 
 ## :man_technologist: Technologies
@@ -111,6 +113,7 @@ The main technologies used to develop the project were:
 - [React](https://reactjs.org/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Styled Component](https://styled-components.com/)
+- [React Progressive Image](https://github.com/FormidableLabs/react-progressive-image)
 - [Typescript](https://www.typescriptlang.org/)
 
 This project was bootstrapped with:
