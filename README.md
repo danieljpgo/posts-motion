@@ -61,7 +61,7 @@
       alt="Post Motion"
       title="Post Motion"
       src=".github/web-mobile.gif"
-      width="600px" />
+      width="640px" />
 </h1>
 
 ## :memo: Project
@@ -75,23 +75,26 @@ The main features of the project are the following animations:
   alt="Post Motion"
   title="Post Motion"
   src=".github/step-1.gif"
-  width="600px" />
+  width="540px" />
 </div>
+
 <div align="center">
 <img
   alt="Post Motion"
   title="Post Motion"
   src=".github/step-2.gif"
-  width="200px" />
+  width="540px" />
 </div>
+
+&nbsp;
 
 - **Transition Page**.
 <div align="center">
 <img
   alt="Post Motion"
   title="Post Motion"
-  src=".github/transition.gif"
-  width="200px" />
+  src=".github/page.gif"
+  width="540px" />
 </div>
 
 - **Scale Image relative to Page View**.
