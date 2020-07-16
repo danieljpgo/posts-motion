@@ -56,28 +56,28 @@
    <a href="#page_with_curl-license">License</a>
 </p>
 
-<!-- <h1 align="center">
+<h1 align="center">
    <img
       alt="Post Motion"
       title="Post Motion"
       src=".github/web-mobile.gif"
       width="600px" />
-</h1> -->
+</h1>
 
 ## :memo: Project
 The project aims to exemplify a list of posts using the **production-ready** **[framer motion](https://www.framer.com/motion/)** library to create **beautiful animations**, with **good performance**.
 
 ## :rocket: Features
 The main features of the project are the following animations:
-- **Stepper**.
-<div>
-<img
+- **Stepper Animation**.
+<div align="center">
+<img 
   alt="Post Motion"
   title="Post Motion"
   src=".github/step-1.gif"
-  width="200px" />
+  width="600px" />
 </div>
-<div>
+<div align="center">
 <img
   alt="Post Motion"
   title="Post Motion"
@@ -86,7 +86,7 @@ The main features of the project are the following animations:
 </div>
 
 - **Transition Page**.
-<div>
+<div align="center">
 <img
   alt="Post Motion"
   title="Post Motion"
@@ -95,7 +95,7 @@ The main features of the project are the following animations:
 </div>
 
 - **Scale Image relative to Page View**.
-<div>
+<div align="center">
 <img
   alt="Post Motion"
   title="Post Motion"
