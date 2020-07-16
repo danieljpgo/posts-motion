@@ -57,8 +57,6 @@
    <a href="#page_with_curl-license">License</a>
 </p>
 
-&nbsp;
-
 <div align="center">
    <img
       alt="Post Motion"
