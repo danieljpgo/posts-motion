@@ -139,4 +139,4 @@ yarn start
 This project is under the [MIT license](https://github.com/danieljpgo/posts-motion/blob/master/LICENSE).
 <div>Released in 2020.</div>
 
-Developed by [Daniel Jorge](https://github.com/danieljpgo)
+Make with ❤️ by [Daniel Jorge](https://github.com/danieljpgo)
