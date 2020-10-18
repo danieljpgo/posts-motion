@@ -1,4 +1,3 @@
-&nbsp;
 <div align="center">
     <img
       alt="Post Motion"
@@ -50,11 +49,11 @@
 &nbsp;
 
 <p align="center">
-   <a href="#memo-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-   <a href="#rocket-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-   <a href="#man_technologist-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-   <a href="#runner-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-   <a href="#page_with_curl-license">License</a>
+   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#license">License</a>
 </p>
 
 <div align="center">
@@ -65,11 +64,11 @@
       width="640px" />
 </div>
 
-## :memo: Project
-The project aims to exemplify a list of posts using the **production-ready** **[framer motion](https://www.framer.com/motion/)** library to create **beautiful animations**, with **good performance**.
+## Project
+The project focuses on testing the possibilities of library [framer motion](https://www.framer.com/motion/) to create beautiful animations, with good performance in a easy way.
 
-## :rocket: Features
-The main features of the project are the following animations:
+## Features
+The main features of the project are the following:
 - **Stagger Animation**.
 <div align="center">
 <img 
@@ -109,7 +108,7 @@ The main features of the project are the following animations:
   width="540px" />
 </div>
 
-## :man_technologist: Technologies
+## Technologies
 The main technologies used to develop the project were:
 - [React](https://reactjs.org/)
 - [Framer Motion](https://www.framer.com/motion/)
@@ -120,22 +119,21 @@ The main technologies used to develop the project were:
 This project was bootstrapped with:
 - [create-react-app](https://github.com/facebook/create-react-app)
 
-## :runner: Getting Started
-First, make sure you have **[Node](https://nodejs.org/en/)** and **[Yarn](https://yarnpkg.com/)**, then clone the project with:
+## Getting Started
+First of all, you may clone this project:
 ```
 git clone https://github.com/danieljpgo/posts-motion.git
 ```
-
-With **[yarn](https://yarnpkg.com/)**, install dependencies:
+Run the following scripts in order to execute the application:
 ```
+// install dependencies:
 yarn install
-```
-In order to **start** the application in a development environment, execute:
-```
+
+// start the application
 yarn start
 ```
 
-## :page_with_curl: License
+## License
 This project is under the [MIT license](https://github.com/danieljpgo/posts-motion/blob/master/LICENSE).
 <div>Released in 2020.</div>
 
